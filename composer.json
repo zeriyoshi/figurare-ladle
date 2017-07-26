@@ -1,0 +1,25 @@
+{
+    "name": "zeriyoshi/figurare-ladle",
+    "type": "library",
+    "description": "Simple Template Engine for PHP",
+    "keywords": ["figurare", "template", "ladle"],
+    "homepage": "https://github.com/zeriyoshi/figurare-ladle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zeriyoshi",
+            "email": "zeriyoshi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Figurare\\": "src/"
+        }
+    }
+}

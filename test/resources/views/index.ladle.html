@@ -1,0 +1,32 @@
+{% extends('layout.ladle.html') %}
+
+{% start_section('contents') %}
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="header center">{{! $header | 'Header' !}}</h1>
+        <div class="row center">
+            <h5 class="header col s12 light">{{ $description | 'Description' }}</h5>
+        </div>
+        <div class="row center">
+            <a href="{{ $github_uri }}" class="btn-large waves-effect waves-light indigo">Show in GitHub</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">Message</div>
+                {* if ($current_hour < 10): *}
+                    Good morning!
+                {* elseif ($current_hour < 18): *}
+                    Good afternoon!
+                {* else: *}
+                    Good evening!
+                {* endif *}
+            </div>
+        </div>
+    </div>
+</div>
+{% end_section() %}
